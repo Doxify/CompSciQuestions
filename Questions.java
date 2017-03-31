@@ -270,5 +270,143 @@ public class Questions {
         d.add("21"); // 10
         e.add("14"); // 10
         correct.add("D"); // 10
+        
+        
+    questions.add( "11) \n"+
+            "4 5 6 2 1\n"+
+            "\n"+
+            "Which of the following statements will cause an error?");//11
+
+            a.add(" list.add(5); "); // 11
+            b.add("list.add( 2, 4); "); // 11
+            c.add("Integer int0b = list.get(5); "); // 11
+            d.add("Object ob = list.add( 5 ,7); "); // 11
+            e.add(" Integer x = list.set( 3, 0); "); // 11
+            correct.add("C"); //11
+
+
+
+
+
+            questions.add (" 12)Refer to method insert below:\n"+
+            "\n"+
+            "/** Precondition:  List list is an ArrayList that contains\n"+
+            " *               Integer values sorted in decreasing order.\n"+
+            " *  Postcondition: Element inserted in its correct position in list.\n"+
+            " */\n"+
+            "public void insert(List<Integer> list, Integer element)\n"+
+            "{\n"+
+            "\tint index = 0;\n"+
+            "\twhile (element.compareTo(list.get(index)) < 0)\n"+
+            "\t\tindex++;\n"+
+            "\tlist.add(index, element);\n"+
+            "}\n"+
+            "\n"+
+            "Suppose that the element to be inserted has value −8. For which list will the method work as intended?\n"+
+            "\n"+
+            "I) 8 4 0 −4\n"+
+            "\n"+
+            " II) −2 −4 −6 −9\n"+
+            "\n"+
+            "III)   −1 −2 −4 −6\n ");//12
+
+            a.add("I only "); // 12
+            b.add(" II only "); // 12
+            c.add("III only "); // 12
+            d.add("II and III only  "); // 12
+            e.add("I, II, and III "); // 12
+            correct.add("B"); //12
+
+        questions.add ("13) Refer to the following declarations:\n"+
+            "\n"+
+            "String[] birds = {\"robin\", \"parrot\", \"bluejay\"};\n"+
+            "List<String> birdList = new ArrayList<String>();\n"+
+            "\n"+
+            "Which of the following correctly assigns the elements of the birds array to birdList? The final ordering need not be the same as in the birds array.\n"+
+            "\n"+
+            "I) for (String b: birds)\n"+
+            "\t birdList.add(b);\n"+
+            "\n"+
+            " II) for (String b: birdList)\n"+
+            "\t birds.add(b);\n"+
+            "\n"+
+            "III) for (int i = birds.length - 1; i >= 0; i--)\n"+
+            "\t birdList.add(i, birds[i]);\n");
+            a.add("I only ")//13
+            b.add("II only ")//13
+            c.add(" III only ")//13
+            d.add("II and III only ")//13
+            e.add("I, II, and III ")//13
+            correct.add("A"); // 13
+
+            questions.add("14)The elements of array arr are to be sorted in increasing order. Which represents the first step of a mergesort algorithm? "); // 14
+            a.add(" Fine the smallest in arr and swap it into arr[0] ")//14
+            b.add(" compare arr [0] with arr[1] ")//14
+            c.add("compare arr[0] with te middle element of arr, arr[mid] ")//14
+            d.add(" compare the first and last element ")//14
+            e.add(" Break the array into roughly two equal halves ")//14
+            correct.add("E");//14
+
+
+            questions.add( "15) Consider the following recursive method:\n"+
+            "\n"+
+            "/** Precondition:  n >= 0 */\n"+
+            "public static void printMystery(int n)\n"+
+            "{\n"+
+            "\tif(n >= 0 && n < 10)\n"+
+            "\t\tSystem.out.print(n);\n"+
+            "\telse\n"+
+            "\t{\n"+
+            "\t\tprintMystery(n / 10);\n"+
+            "\t\tSystem.out.print(\" \");\n"+
+            "\t\tSystem.out.print((n % 10) / 2);\n"+
+            "\t}\n"+
+            "}\n"+
+            "\n"+
+            "What will be output by the following method call?\n"+
+            "\n"+
+            "printMystery(987);")
+
+            a.add("9 4 3 "); // 15
+            b.add("3 4 9 "); // 15
+            c.add("7 4 2  "); // 15
+            d.add("4 4 3 "); // 15
+            e.add("9 5 6 "); // 15
+            correct.add("A"); //15
+
+        questions.add("16)\n"+
+            "A programmer plans to write a program that simulates a small card game (no more than four players). Each player will have a hand of ten cards, where each card has a suit and a value. The game will involve either adding cards to a hand, or discarding cards. The first player to have zero cards left in his hand is the winner. In the simulation, as the game is in progress, each player's hand is displayed on the screen.\n"+
+            "\n"+
+            "The programmer plans to have a short driver class whose main method has just two statements:\n"+
+            "\n"+
+            "Game g = new Game();\n"+
+            "g.playCards();\n"+
+            "\n"+
+            "The Game class will have several objects: a Display, a Deck, a Card, and a PlayerGroup. The PlayerGroup will have a list of Players, and each Player will have a Hand of Cards.\n"+
+            "\n"+
+            "The relationship between the Player and Hand classes is an example of\n");//16
+
+           a.add("Inheritance "); //16
+            b.add("top-down design "); //16
+            c.add("information hiding "); //16
+            d.add("independent classes  "); //16
+            e.add("composition "); //16
+           correct.add("E"); //16
+
+
+        questions.add("17)\n"+
+            "\tConsider the problem of writing a game in which a user thinks of an integer from 1 to 1000 inclusive and the computer tries to guess that number. Each time the computer makes a guess, the user makes one of three responses:\n"+
+            "\n"+
+            "\"lower\" (i.e., the number is lower than the computer's guess)\n"+
+            "\"higher\" (i.e., the number is higher than the computer's guess)\n"+
+            "\"you got it in < however many > tries!\"\n"+
+            "\n"+
+            "Suppose the game is programmed so that the computer uses a binary search strategy for making its guesses. What is the maximum number of guesses the computer could make before guessing the user's number?\n");//17
+             a.add(" 10 "); //17
+            b.add("189 "); //17
+            c.add("100 "); //17
+            d.add("14 "); //17
+            e.add("201 "); //17
+            correct.add("A");//17
     }
 }
